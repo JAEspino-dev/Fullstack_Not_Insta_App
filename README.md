@@ -2,7 +2,7 @@
 Use this social media app if you want to connect with friends, and see your custom feed!
 
 # Link
-Coming Soon!
+[Check out the site here!](https://binary-upload-boom-fzdv.onrender.com/)
 
 # 📋 How to use
 Download files.   
