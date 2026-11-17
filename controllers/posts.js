@@ -30,9 +30,10 @@ module.exports = {
   },
   createPost: async (req, res) => {
     try {
+      console.log("Multer file:", req.file);
       // Upload image to cloudinary
       const result = await cloudinary.uploader.upload(req.file.path); // cloudinary is a package. uploader is a method of that object.uploader is another method of the first uploader property
-
+      console.log("Cloudinary result:", result.secure_url);
       await Post.create({ // using await because we need the URL from Cloudinary
         title: req.body.title,
         image: result.secure_url, // result came from cloudinary
